@@ -1,0 +1,501 @@
+/*
+Author : Hugo Saint-Saëns
+URI : http://fernand.mico.pagesperso-orange.fr/
+Description : Personalisation du site
+*/
+
+/*********/
+/* FONTS */
+/*********/
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+/**********/
+/* GLOBAL */
+/**********/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    display: table;
+}
+footer {
+    display: table-row;
+}
+a:hover {
+    text-decoration: none;
+}
+h5 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+.container-fluid.d-none.d-md-block h1, .d-md-none a.navbar-brand {
+    font-family: 'Great Vibes',cursive;
+}
+.container-fluid.d-none.d-md-block ul, .d-md-none ul {
+    font-family: 'Roboto',cursive;
+}
+header {
+    margin-bottom: 2.5%;
+}
+#back {
+    background-color: white;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 30px;
+}
+@media screen and (max-width: 767px) {
+    #back {
+        bottom: 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    #back {
+        bottom: 25px;
+    }
+}
+#back button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 5px;
+}
+#back button svg {
+    width: 60%;
+    height: 60%;
+}
+
+/* DESKTOP */
+
+.container-fluid.d-none.d-md-block {
+    padding: 0;
+    margin-top: .2%;
+}
+.container-fluid.d-none.d-md-block h1 {
+    font-size: 85px;
+    margin-bottom: 0;
+}
+.container-fluid.d-none.d-md-block h1 + h1 {
+    font-size: 42px;
+    margin-top: -10px;
+}
+.container-fluid.d-none.d-md-block .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.container-fluid.d-none.d-md-block nav {
+    padding: 0px;
+}
+.container-fluid.d-none.d-md-block ul {
+    width: 100%;
+}
+.container-fluid.d-none.d-md-block li, .container-fluid.d-none.d-md-block li.active {
+    font-size: 20px;
+    width: 16.66%;
+}
+.container-fluid.d-none.d-md-block li {
+    border-bottom: 2.5px solid transparent;
+    transition: border .5s;
+}
+.container-fluid.d-none.d-md-block li:hover {
+    border-bottom: 2.5px solid black;
+}
+.container-fluid.d-none.d-md-block li.active {
+    border-bottom: 2.5px solid black;
+}
+.container-fluid.d-none.d-md-block a {
+    color: rgba(0,0,0,.5);
+    transition: color .5s;
+}
+.container-fluid.d-none.d-md-block a:hover {
+    color: black;
+}
+.container-fluid.d-none.d-md-block hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 38%;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    margin: auto;
+    opacity: 50%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+}
+.fix {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* MOBILE */
+
+.d-md-none nav {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.d-md-none a.navbar-brand {
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 13px;
+}
+.d-md-none .nav-item {
+    font-size: 18px;
+    text-align: center;
+}
+.d-md-none hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 98%;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+.navbar-toggler-icon {
+    margin: 0;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/********/
+/* BODY */
+/********/
+
+body div{
+    font-family: 'Roboto', cursive;
+}
+body span {
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2.5px;
+}
+#separation {
+    margin-top: 50px;
+}
+.blockquote {
+    font-size: 16px;
+    margin: 0;
+}
+.blockquote-footer {
+    margin-top: 0;
+}
+body hr {
+    display      : block;
+    height       : 1px;
+    border       : 0;
+    width        : 60vw;
+    border-top   : 1px solid #ccc;
+    padding      : 0;
+    margin-top   : 4.5%;
+    margin-bottom: 4.5%;
+}
+
+/*********/
+/* INDEX */
+/*********/
+
+div.row {
+    width: 98%;
+    margin: 1%;
+}
+div.col-md-6 div.container-fluid div.row {
+    margin: 0;
+}
+div.row div.col-md-6.align-self-center.justify-content-center {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.col-md-6 div.container-fluid div.row div.col-4 img {
+    width: 100%;
+}
+div.col-md-6.align-self-center.justify-content-center div.container-fluid.align-self-center.d-flex.justify-content-center div.row div.col-4 {
+    padding: 0;
+}
+#index_image1 {
+    border-top-left-radius: 8px;
+}
+#index_image3 {
+    border-top-right-radius: 8px;
+}
+#index_image4 {
+    border-bottom-left-radius: 8px;
+}
+#index_image6 {
+    border-bottom-right-radius: 8px;
+}
+body .row .col-6.align-self-center.justify-content-center {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h4 {
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+h3.align-self-center.text-center {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/*************/
+/* BOU-MEDFA */
+/*************/
+
+h2 {
+    margin: 0;
+    margin-bottom: 1.8vw;
+}
+
+/**************/
+/* LIVRE D'OR */
+/**************/
+
+.lettre {
+    font-family  : 'Roboto Mono',cursive;
+    font-size    : 13px;
+    margin-bottom: 50px;
+}
+
+/**********/
+/* ALBUMS */
+/**********/
+
+.col-md-4 {
+    padding-top   : 2%;
+    padding-bottom: 5%;
+}
+.item-box-blog {
+    border            : 1px solid grey;
+    border-radius     : 20px;
+    padding           : 20px;
+    -moz-transition   : all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition        : all 0.3s;
+}
+.item-box-blog:hover {
+    -moz-transform   : scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform        : scale(1.05);
+}
+.item-box-blog-image {
+    margin-bottom: 35px;
+}
+.item-box-blog-image img {
+    border-radius: 10px;
+    max-height   : 200px;
+    max-width    : 100%;
+}
+
+/**************************/
+/* ALBUM 1, 2, 3, 4, 5, 6 */
+/**************************/
+
+div.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-12.d-flex.justify-content-center.align-self-center {
+    padding: 4%;
+}
+div.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-12.d-flex.justify-content-center.align-self-center img {
+    border-radius: 4px;
+    max-height: 150px;
+    max-width: 150px;
+    -moz-transition   : all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition        : all 0.3s;
+}
+div.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-12.d-flex.justify-content-center.align-self-center img:hover {
+    -moz-transform   : scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform        : scale(1.25);
+}
+.modal-title {
+    width: 100%;
+    margin-left: 30px;
+}
+.modal-open {
+    padding-right: 0px !important;
+}
+.modal.show {
+    padding-right: 0px !important;
+}
+.modal .modal-footer {
+    display: block;
+}
+.modal-dialog.modal-lg {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+@media screen and (min-width: 768px) {
+    .modal-dialog.modal-lg {
+        margin-top: 55px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .modal-dialog.modal-lg {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .modal-dialog.modal-lg {
+        padding: 5px;
+    }
+}
+.modal-content {
+    border-radius: 10px;
+}
+.modal-header {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.modal-body img {
+    width: auto;
+    padding: 0;
+    border-radius: 5px;
+}
+@media screen and (min-width: 992px) {
+    .modal-header {
+        min-height: 90px;
+    }
+    .modal-body img {
+        max-height: 400px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .modal-header {
+        min-height: 140px;
+    }
+    .modal-body img {
+        max-height: 280px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .modal-header {
+        min-height: 130px;
+    }
+    .modal-body img {
+        max-height: 260px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .modal-header {
+        min-height: 130px;
+    }
+    .modal-body img {
+        max-height: 200px;
+    }
+}
+.modal-header {
+    padding: 0;
+}
+.modal-header button.close {
+    margin: 0;
+    padding: 8px;
+}
+button#show-previous-image.btn.btn-outline-dark.float-left {
+    margin: 0;
+    height: 34px;
+    width: 34px;
+}
+button#show-next-image.btn.btn-outline-dark.float-right {
+    margin: 0;
+    height: 34px;
+    width: 34px;
+}
+.modal-footer button {
+    margin: 0;
+    padding: 0;
+}
+.modal-footer svg.bi {
+    margin: 8px;
+    margin-bottom: 2.5px;
+}
+div.container-fluid div.align-self-center.text-center button.btn.btn-outline-dark {
+    height: 42px;
+    width: 42px;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5%;
+    margin-bottom: 3.5%;
+}
+div.container-fluid div.align-self-center.text-center button.btn.btn-outline-dark svg {
+    margin: 8px;
+    margin-bottom: 1px;
+}
+div.container-fluid div.row div.align-self-center button {
+    height: 42px;
+    width: 42px;
+    padding: 0;
+    margin: 0;
+}
+div.container-fluid div.row div.align-self-center button svg {
+    margin: 8px;
+    margin-bottom: 1px;
+}
+@media screen and (max-width: 575px) {
+    div.container-fluid div.row div.align-self-center button.float-right {
+        margin-right: -7vw;
+    }
+    div.container-fluid div.row div.align-self-center button.float-left {
+        margin-left: -7vw;
+    }
+}
+.pictures {
+    margin-top: 3%;
+}
+
+/***********/
+/* TABLEAU */
+/***********/
+
+.table.table-hover {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.table .male {
+    color: blue;
+}
+.table .female {
+    color: red;
+}
